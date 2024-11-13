@@ -1,7 +1,3 @@
-
-
-
-```markdown:README.md
 # Argo Workflow Java Client
 
 A Java-based client for interacting with Argo Workflows using the Fabric8 Kubernetes client library.
@@ -91,26 +87,6 @@ The project uses standard Kubernetes client configuration. Make sure your kubeco
 - This is a basic implementation and may need additional error handling for production use
 - Make sure to properly handle the Kubernetes client lifecycle in production environments
 - The current implementation focuses on simple workflow examples and can be extended for more complex use cases
-```
-
-This README provides a comprehensive overview of the project, its setup, and usage. You may want to customize it further based on your specific needs, particularly:
-
-1. Add specific installation instructions for your environment
-2. Include more detailed configuration options
-3. Add a license section
-4. Include any specific requirements for your deployment environment
-5. Add troubleshooting sections if needed
-
-The README references the following key files from your codebase:
-
-```11:15:src/main/java/org/example/Main.java
-    public static void main(String[] args) {
-        KubernetesClient client = new KubernetesClientBuilder().build();
-        ArgoWorkflowManager argoWorkflowManager = new ArgoWorkflowManager();
-        argoWorkflowManager.submitArgoWorkflow(client);
-    }
-```
-
 
 
 ```23:36:src/main/java/org/example/ArgoWorkflowManager.java
@@ -129,6 +105,3 @@ The README references the following key files from your codebase:
         return createdWorkflow;
     }
 ```
-
-
-Would you like me to expand on any particular section of the README?
